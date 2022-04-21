@@ -21,6 +21,9 @@ body {
 }
 
 /* navbar */
+.navbar{
+    z-index: 888888;
+}
 .w-96 {
     width: 96%;
 }

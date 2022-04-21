@@ -72,5 +72,6 @@ Route::get('/admin_dash', function () {
 return view('admin.layout.dashboard');
 });  
 Route::get('/addAuction', [PostsAdminController::class, 'showAdminPosts']);
+Route::get('/makeAuction', [PostsAdminController::class, 'showmakeAuction']);
  
     

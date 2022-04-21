@@ -14,11 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
     <title>Cars Auction</title>
-
 </head>
-<!-- Font Family -->
-
-<body class="fs-6">
+<body>
     <div class="fixed-top">
         <div class="cornerstyle"></div>
         <div class="contactnavbar d-flex  align-content-between me-4 p-4 flex-wrap">
@@ -78,49 +75,44 @@
 
         </div>
     </nav>
-<section class="container d-flex flex-wrap justify-content-between ">
-    <div class="card text-light m-auto" style="width: 18rem;">
-        <img src="{{ URL::asset('images/car1.png') }}" height="220" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title text-center">Mercedes-Benz</h5>
-            <p class="text-center fs-7 card-details">جديد</p>
 
+    <section class="">
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ URL::asset('images/car1.png') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ URL::asset('images/car2.png') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ URL::asset('images/car3.png') }}" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div>
+                <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
         
-        </div>
-     
-        <div class="card-body d-flex justify-content-between">
-            <p href="#" class="card-link card-details">سعر المزايدة/<span class="active">3000$</span></p>
-            <a href="/makeAuction" class="card-link active">مزايدة<i class="fa fa-long-arrow-left p-2 pt-1"> </i></a>
-        </div>
-    </div>
-    <div class="card text-light m-auto" style="width: 18rem;">
-        <img src="{{ URL::asset('images/car4.jpg') }}" class="card-img-top" height="220" alt="...">
-        <div class="card-body">
-            <h5 class="card-title text-center">Mercedes-Benz</h5>
-            <p class="text-center fs-7 card-details">جديد</p>
-
-        </div>
-        <div class="card-body d-flex justify-content-between">
-            <p href="#" class="card-link card-details">سعر المزايدة/<span class="active">3000$</span></p>
-            <a href="#" class="card-link active">مزايدة<i class="fa fa-long-arrow-left p-2 pt-1"> </i></a>
-        </div>
-    </div>
-    <div class="card text-light m-auto" style="width: 18rem;">
-        <img src="{{ URL::asset('images/car5.jpg') }}" class="card-img-top" height="220" alt="...">
-        <div class="card-body">
-            <h5 class="card-title text-center">Mercedes-Benz</h5>
-            <p class="text-center fs-7 card-details">جديد</p>
-            
-        </div>
-     
-        <div class="card-body d-flex justify-content-between">
-            <p href="#" class="card-link card-details">سعر المزايدة/<span class="active">3000$</span></p>
-            <a href="#" class="card-link active">مزايدة<i class="fa fa-long-arrow-left p-2 pt-1"> </i></a>
-        </div>
-    </div>
-</section>
-  
-    <!-- nav end -->
+    </section>
+    
     <footer>
         <script src="{{ URL::asset('js/js.js') }}"></script>
         <script src="{{ URL::asset('js/app.js') }}"></script>
@@ -130,3 +122,4 @@
 </body>
 
 </html>
+
