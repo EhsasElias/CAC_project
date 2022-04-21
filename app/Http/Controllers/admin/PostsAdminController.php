@@ -12,7 +12,7 @@ class PostsAdminController extends Controller
         $categories = Category::select()->get();
         return view('front.addAuction',[ 'categories' => $categories ]);
     }
-    public function showmakeAuction(){
-        return view('front.makeAuction');
+    public function showauctionDetails(){
+        return view('front.auctionDetails');
     }
 }

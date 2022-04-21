@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
     <title>Cars Auction</title>
 </head>
+
 <body>
     <div class="fixed-top">
         <div class="cornerstyle"></div>
@@ -28,7 +29,7 @@
 
     </div>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
         <div class="container-fluid w-96 my-5">
 
@@ -76,43 +77,68 @@
         </div>
     </nav>
 
-    <section class="">
-        <section>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <section class="d-flex container mt-5">
+        <section class="col-lg-6 col-sm-12 mt-5">
+            <div id="carouselExampleControls" class="carousel slide col-12 mt-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ URL::asset('images/car1.png') }}" class="d-block w-100" alt="...">
+                        <img src="{{ URL::asset('images/main.png') }}" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
-                        <img src="{{ URL::asset('images/car2.png') }}" class="d-block w-100" alt="...">
+
+
+                </div>
+
+                <div class="col-12 d-flex flex-wrap justify-content-between">
+                    <div class="">
+                        <img src="{{ URL::asset('images/1.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
                     </div>
-                    <div class="carousel-item">
-                        <img src="{{ URL::asset('images/car3.png') }}" class="d-block w-100" alt="...">
+                    <div class="">
+                        <img src="{{ URL::asset('images/2.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/3.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/4.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/5.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/6.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/7.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/8.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/9.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
+                    </div>
+                    <div class="">
+                        <img src="{{ URL::asset('images/10.jpg') }}" class="img-fluid mt-3" alt="..." width="100"
+                            height="100">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div>
-                <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                </div>
-            </div>
-        </section>
-        <section>
 
         </section>
-        
+        <section class="col-lg-6 col-sm-12">
+            <div class="col-12">
+            </div>
+        </section>
+
     </section>
-    
+
     <footer>
         <script src="{{ URL::asset('js/js.js') }}"></script>
         <script src="{{ URL::asset('js/app.js') }}"></script>
@@ -122,4 +148,3 @@
 </body>
 
 </html>
-
