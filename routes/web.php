@@ -74,9 +74,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin_dash', function () {
         return view('admin.layout.dashboard');
     });
-    Route::get('/home', function () {
-        return view('front.home');
-    });
+    // Route::get('/home', function () {
+    //     return view('front.home');
+    // });
 
 
 
@@ -130,11 +130,13 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('front.index');
-});
+})->name('home');
 
 Route::get('/auctions', function () {
     return view('front.auctions');
-});
-
+})->name('auctions');
+Route::get('/offers', function () {
+    return view('front.offers');
+})->name('offers');

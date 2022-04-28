@@ -432,28 +432,36 @@ line-height: 30px;
   line-height: 30px;
 }
 .auctions-bg{
-  background-image: url('../images/bg-main.webp');
+  background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.7)) ,url('../images/bg-main.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  height: 80vh;
+  width: 100vw;
+ background-attachment: fixed;
+}
+.offers-bg{
+  background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.7)) ,url('../images/car2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+ background-attachment: fixed;
 }
 .auctions-bg-child{
-  background-color:black;
-  height: 100%;
-  width: 100%;
-  opacity: .5;
-}
-.auctions-bg-child div{
-  height: 60%;
+  padding-top:200px !important;
 }
 .auctions-bg-child div h1{
   color: var(--yellow);
 }
+.auctions-bg-child form select{
+  background-color: transparent;
+  width: 10rem;
+}
+.auctions-bg-child form select option{
+  background-color: var(--darkgrey) ;
+}
 footer{
-  
-  background-color: #1e1e1e !important;
-
+ background-color: #1e1e1e !important;
 }
 footer .cornerstyle{
   height: 100px;
